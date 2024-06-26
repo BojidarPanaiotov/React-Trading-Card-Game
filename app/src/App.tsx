@@ -1,9 +1,11 @@
+import Banner from "./components/Banner"
+
 const App = () => {
 
   return (
-    <h1>
-      App
-    </h1>
+    <div>
+      <Banner url="./src/assets/banners/main.png"/>
+    </div>
   )
 }
 

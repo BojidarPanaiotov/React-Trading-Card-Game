@@ -5,6 +5,10 @@ const Banner: React.FC<{ url: string }> = ({ url }) => {
     backgroundImage: `url(${url})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    position: 'absolute',
+    top: '0',
+    left: '0',
+    zIndex: '-1'
   }
 
   return <div style={style}></div>

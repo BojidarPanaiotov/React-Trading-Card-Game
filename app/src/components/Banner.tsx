@@ -5,7 +5,7 @@ const Banner: React.FC<{ url: string }> = ({ url }) => {
     backgroundImage: `url(${url})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    position: 'absolute',
+    position: 'fixed',
     top: '0',
     left: '0',
     zIndex: '-1'

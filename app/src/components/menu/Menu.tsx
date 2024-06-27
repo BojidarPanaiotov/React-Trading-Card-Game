@@ -1,11 +1,14 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+
 import Home from './Home'
 import Battle from './Battle'
 import Decks from './Decks'
 import Store from './Store'
-import './Menu.css'
+import Settings from './Settings'
 
-const Menu = () => {
+import '../styles/Menu.css'
+
+const Menu = ({ updateBanner }) => {
   return (
     <Router>
       <div className='App'>
@@ -23,6 +26,9 @@ const Menu = () => {
             <li>
               <Link to='/store'>Store</Link>
             </li>
+            <li>
+              <Link to='/settings'>Settings</Link>
+            </li>
           </ul>
         </nav>
         <div className='content'>
@@ -31,6 +37,7 @@ const Menu = () => {
             <Route path='/battle' element={<Battle />} />
             <Route path='/decks' element={<Decks />} />
             <Route path='/store' element={<Store />} />
+            <Route path='/settings' element={<Settings updateBanner={updateBanner} />} />
           </Routes>
         </div>
       </div>

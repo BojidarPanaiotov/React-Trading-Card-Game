@@ -4,7 +4,10 @@ enum Type {
   Dragon,
   Undead,
   Elemental,
-  Demon
+  Demon,
+  Titan,
+  God,
+  Void
 }
 
 export default abstract class Card {

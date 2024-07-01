@@ -25,7 +25,7 @@ const Card = ({ cost, attack, health, defense, name, description, type, image })
         <img src={image} alt={name} />
       </div>
       <div className='tcg-card-body'>
-        <div className='tcg-card-type'>{type}</div>
+        <div className='tcg-card-type' style={{backgroundColor: type.color}}>{type.type}</div>
         <p className='tcg-card-description'>{description}</p>
       </div>
       <div className='tcg-card-stats'>

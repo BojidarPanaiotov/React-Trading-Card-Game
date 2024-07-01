@@ -1,21 +1,9 @@
-enum Type {
-  Beast,
-  Cursed,
-  Dragon,
-  Undead,
-  Elemental,
-  Demon,
-  Titan,
-  God,
-  Void
-}
-
-export default abstract class Card {
+export default abstract class BaseCard {
   constructor(
     public name: string,
     public description: string,
     public effect: string,
-    public type: Type,
+    public type: string,
     public health: number,
     public defense: number,
     public cost: number,
